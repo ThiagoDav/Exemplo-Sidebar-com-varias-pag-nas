@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video</title>
+</head>
+<body>
+    <h1>Entendendo a Tag HTML &lt;video&gt;</h1>
+    <p>
+        A tag <code>&lt;video&gt;</code> é usada para incorporar conteúdo de vídeo em uma página HTML. Ela permite que você reproduza arquivos de vídeo diretamente no navegador.
+    </p>
+
+    <h2>Sintaxe Básica:</h2>
+    <p>
+        Aqui está um exemplo básico de como usar a tag <code>&lt;video&gt;</code> em HTML:
+    </p>
+    <pre>
+        &lt;video width="320" height="240" controls&gt;
+            &lt;source src="video.mp4" type="video/mp4"&gt;
+            Your browser does not support the video tag.
+        &lt;/video&gt;
+    </pre>
+    <p>
+        Neste exemplo, estamos exibindo um vídeo com largura de 320 pixels e altura de 240 pixels. O atributo <code>controls</code> adiciona controles de reprodução padrão (play, pause, volume, etc.) ao vídeo. Se o navegador não suportar o vídeo, o texto "Your browser does not support the video tag." será exibido.
+    </p>
+
+    <h2>Atributos Importantes:</h2>
+    <ul>
+        <li><strong>src:</strong> O atributo <code>src</code> especifica o URL do arquivo de vídeo.</li>
+        <li><strong>width e height:</strong> Especificam a largura e altura do vídeo em pixels.</li>
+        <li><strong>controls:</strong> Adiciona controles de reprodução ao vídeo, como play, pause e volume.</li>
+        <li><strong>autoplay:</strong> Define se o vídeo deve começar a reproduzir automaticamente após o carregamento.</li>
+        <li><strong>loop:</strong> Define se o vídeo deve ser reproduzido em um loop contínuo.</li>
+        <li><strong>poster:</strong> Especifica uma imagem de visualização para ser exibida enquanto o vídeo está sendo baixado ou até que o usuário inicie a reprodução.</li>
+    </ul>
+
+    <p>
+        Além desses atributos, a tag <code>&lt;video&gt;</code> também suporta várias fontes de vídeo, permitindo que você forneça diferentes formatos de vídeo para garantir a compatibilidade com diferentes navegadores.
+    </p>
+
+</body>
+</html>

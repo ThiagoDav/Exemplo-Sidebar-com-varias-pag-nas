@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio</title>
+</head>
+<body>
+    <h1>Entendendo a Tag HTML &lt;audio&gt;</h1>
+    <p>
+        A tag <code>&lt;audio&gt;</code> é usada para incorporar conteúdo de áudio em uma página HTML. Ela permite que você reproduza arquivos de áudio diretamente no navegador.
+    </p>
+
+    <h2>Sintaxe Básica:</h2>
+    <p>
+        Aqui está um exemplo básico de como usar a tag <code>&lt;audio&gt;</code> em HTML:
+    </p>
+    <pre>
+        &lt;audio controls&gt;
+            &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+            Your browser does not support the audio tag.
+        &lt;/audio&gt;
+    </pre>
+    <p>
+        Neste exemplo, estamos exibindo um player de áudio com controles de reprodução padrão (play, pause, volume, etc.). Se o navegador não suportar o áudio, o texto "Your browser does not support the audio tag." será exibido.
+    </p>
+
+    <h2>Atributos Importantes:</h2>
+    <ul>
+        <li><strong>src:</strong> O atributo <code>src</code> especifica o URL do arquivo de áudio.</li>
+        <li><strong>controls:</strong> Adiciona controles de reprodução ao player de áudio, como play, pause e volume.</li>
+        <li><strong>autoplay:</strong> Define se o áudio deve começar a reproduzir automaticamente após o carregamento.</li>
+        <li><strong>loop:</strong> Define se o áudio deve ser reproduzido em um loop contínuo.</li>
+    </ul>
+
+    <p>
+        Além desses atributos, a tag <code>&lt;audio&gt;</code> também suporta várias fontes de áudio, permitindo que você forneça diferentes formatos de áudio para garantir a compatibilidade com diferentes navegadores.
+    </p>
+
+</body>
+</html>

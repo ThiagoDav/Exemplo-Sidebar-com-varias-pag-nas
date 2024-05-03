@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Drag and Drop</title>
+    <style>
+        .drag-container {
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #aaa;
+            padding: 20px;
+        }
+        .drag-item {
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entendendo a funcionalidade de Arrastar e Soltar em HTML</h1>
+    <p>
+        O recurso de arrastar e soltar, ou "drag and drop" em inglês, permite que os usuários arrastem elementos HTML e os soltem em áreas específicas da página. Isso é útil para criar interfaces de usuário interativas e intuitivas.
+    </p>
+
+    <h2>Como Funciona:</h2>
+    <p>
+        Para tornar um elemento arrastável em HTML, você precisa definir os seguintes eventos:
+    </p>
+    <ul>
+        <li><strong>ondragstart:</strong> Este evento é disparado quando o usuário começa a arrastar o elemento.</li>
+        <li><strong>ondrag:</strong> Este evento é disparado enquanto o elemento está sendo arrastado.</li>
+        <li><strong>ondragend:</strong> Este evento é disparado quando o usuário solta o elemento.</li>
+    </ul>
+
+    <h2>Exemplo:</h2>
+    <div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div class="drag-item" draggable="true" ondragstart="drag(event)">Item 1</div>
+        <div class="drag-item" draggable="true" ondragstart="drag(event)">Item 2</div>
+    </div>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+        
+        function drag(event) {
+            event.dataTransfer.setData("text", event.target.innerText);
+        }
+        
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("text");
+            event.target.innerText = data;
+        }
+    </script>
+</body>
+</html>
