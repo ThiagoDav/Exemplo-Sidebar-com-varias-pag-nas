@@ -3,27 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplos de Citações HTML</title>
+    <title>Explicação das Tags HTML de Citação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        blockquote {
+            margin: 0;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ccc;
+        }
+        q::before, q::after {
+            content: '"';
+        }
+        cite {
+            font-style: italic;
+        }
+        abbr {
+            text-decoration: underline;
+            cursor: help;
+        }
+        dfn {
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
-
-    <h1>Exemplos de Citações HTML</h1>
-
-    <h2>1. Citação Longa</h2>
+    <h1>Explicação das Tags HTML de Citação</h1>
+    <p>As tags HTML de citação são usadas para incluir citações e referências em uma página web. Abaixo estão alguns exemplos comuns de tags de citação:</p>
+    
+    <h2>&lt;blockquote&gt;</h2>
+    <p>O elemento <code>blockquote</code> é usado para citações longas que podem abranger vários parágrafos.</p>
+    
+    <h2>&lt;q&gt;</h2>
+    <p>O elemento <code>q</code> é usado para citações curtas, como uma frase ou parte de uma frase. O navegador geralmente adiciona aspas ao texto dentro dessa tag.</p>
+    
+    <h2>&lt;cite&gt;</h2>
+    <p>O elemento <code>cite</code> é usado para definir a origem da citação. Geralmente é exibido em itálico.</p>
+    
+    <h2>&lt;abbr&gt;</h2>
+    <p>O elemento <code>abbr</code> é usado para definir uma abreviação ou um acrônimo, permitindo que o usuário veja a versão completa do termo ao passar o mouse sobre ele.</p>
+    
+    <h2>&lt;dfn&gt;</h2>
+    <p>O elemento <code>dfn</code> é usado para definir o termo ou frase que está sendo definido em um glossário ou dicionário.</p>
+    
+    <h2>Exemplo:</h2>
     <blockquote>
-        <p>Este é um exemplo de citação longa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-        <footer>- Autor da Citação</footer>
+        <p>A melhor maneira de prever o futuro é inventá-lo.</p>
+        <cite>Alan Kay</cite>
     </blockquote>
-
-    <h2>2. Citação Curta</h2>
-    <q>Este é um exemplo de citação curta.</q>
-    <footer>- Autor da Citação</footer>
-
-    <h2>3. Citação em Destaque</h2>
-    <p>Uma pessoa sábia disse uma vez: <cite>Concentre-se no progresso, não na perfeição.</cite></p>
-
-    <h2>4. Citação com Título de Trabalho</h2>
-    <cite title="Título do Trabalho">Nome do Autor</cite>
-
+    
+    <p>As tags de citação HTML são essenciais para atribuir créditos e fornecer informações adicionais sobre o conteúdo em uma página web.</p>
 </body>
 </html>
