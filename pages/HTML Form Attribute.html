@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Attribute</title>
+</head>
+<body>
+    <h1>Entendendo o atributo de formulário HTML &lt;form&gt;</h1>
+    <p>
+        Em HTML, o atributo <code>form</code> é usado para vincular elementos de formulário a um formulário específico em uma página da web.
+    </p>
+    <p>
+        Este atributo é útil quando você tem vários formulários em uma página e deseja agrupar campos de entrada de dados de diferentes partes do layout ou mesmo em diferentes formulários.
+    </p>
+    <p>
+        O valor do atributo <code>form</code> deve ser o <em>id</em> do formulário ao qual o elemento de entrada de dados pertence.
+    </p>
+    <p>
+        Ao usar esses símbolos em texto HTML, é importante substituí-los por <code>&amp;lt;</code> para <strong>&lt;</strong> e <code>&amp;gt;</code> para <strong>&gt;</strong>. Isso é necessário para evitar que o navegador interprete erroneamente como parte do código HTML.
+    </p>
+    <p>
+        Aqui está um exemplo de como você pode usar o atributo <code>form</code> para vincular um campo de entrada a um formulário:
+    </p>
+    <pre>
+        &lt;form id="meuFormulario" action="/processar_dados" method="post"&gt;
+            &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+            &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+
+            &lt;input type="submit" value="Enviar"&gt;
+        &lt;/form&gt;
+
+        &lt;input type="submit" value="Enviar" form="meuFormulario"&gt;
+    </pre>
+    <p>
+        Neste exemplo, o segundo botão de envio está fora do formulário, mas está vinculado ao formulário com o <code>form="meuFormulario"</code>, permitindo que ele também envie os dados do formulário quando clicado.
+    </p>
+</body>
+</html>
