@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Canvas</title>
+</head>
+<body>
+    <h1>Entendendo a Tag HTML &lt;canvas&gt;</h1>
+    <p>
+        A tag <code>&lt;canvas&gt;</code> é uma das formas mais poderosas de renderizar gráficos e imagens no navegador. Ela fornece uma área de desenho na qual você pode desenhar gráficos, gráficos, animações e muito mais usando JavaScript.
+    </p>
+    <p>
+        Ao usar a tag <code>&lt;canvas&gt;</code>, você pode criar gráficos interativos e dinâmicos, como jogos, visualizações de dados e aplicativos de desenho.
+    </p>
+    <h2>Exemplo Básico:</h2>
+    <p>
+        Aqui está um exemplo básico de como usar a tag <code>&lt;canvas&gt;</code> em HTML:
+    </p>
+    <pre>
+        &lt;canvas id="myCanvas" width="300" height="150"&gt;&lt;/canvas&gt;
+    </pre>
+    <p>
+        Você pode então usar JavaScript para desenhar no canvas, acessando o elemento do canvas pelo seu id e utilizando o contexto de desenho.
+    </p>
+    <h2>Como Desenhar no Canvas:</h2>
+    <p>
+        Para desenhar no canvas, você precisa obter o contexto de desenho, que pode ser 2D ou 3D. No exemplo a seguir, usamos o contexto 2D:
+    </p>
+    <pre>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        // Desenhe um retângulo
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(10, 10, 100, 50);
+    </pre>
+    <p>
+        Este código desenha um retângulo azul no canvas, começando nas coordenadas (10, 10) e com largura 100 e altura 50 pixels.
+    </p>
+    <h2>Suporte do Navegador:</h2>
+    <p>
+        A tag <code>&lt;canvas&gt;</code> é amplamente suportada pelos navegadores modernos, incluindo Chrome, Firefox, Safari e Edge. No entanto, é sempre uma boa prática verificar a compatibilidade com navegadores específicos ao implementar recursos de canvas em seu site.
+    </p>
+</body>
+</html>
