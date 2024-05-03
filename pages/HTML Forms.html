@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Entendendo a tag HTML &lt;form&gt;</h1>
+    <p>
+        Em HTML, a tag <code>&lt;form&gt;</code> é usada para criar um formulário em uma página da web. Os formulários são usados para coletar informações do usuário, como nomes, endereços de e-mail, senhas, etc.
+    </p>
+    <p>
+        Um formulário geralmente contém vários elementos, como campos de entrada de texto, caixas de seleção, botões de opção e botões de envio.
+    </p>
+    <p>
+        Para enviar os dados do formulário para um servidor web para processamento adicional, você precisa especificar o atributo <code>action</code> na tag <code>&lt;form&gt;</code>. O atributo <code>method</code> especifica o método HTTP a ser usado para enviar os dados do formulário, como GET ou POST.
+    </p>
+    <p>
+        Ao usar esses símbolos em texto HTML, é importante substituí-los por <code>&amp;lt;</code> para <strong>&lt;</strong> e <code>&amp;gt;</code> para <strong>&gt;</strong>. Isso é necessário para evitar que o navegador interprete erroneamente como parte do código HTML.
+    </p>
+    <p>
+        Aqui está um exemplo de como você pode criar um formulário HTML básico:
+    </p>
+    <pre>
+        &lt;form action="/processar_dados" method="post"&gt;
+            &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+            &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+
+            &lt;label for="email"&gt;Email:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+
+            &lt;input type="submit" value="Enviar"&gt;
+        &lt;/form&gt;
+    </pre>
+    <p>
+        Este formulário tem campos para nome e e-mail, e um botão de envio. Quando o botão de envio é clicado, os dados do formulário são enviados para "/processar_dados" usando o método POST.
+    </p>
+</body>
+</html>

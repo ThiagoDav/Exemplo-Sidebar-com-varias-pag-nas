@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML URL Encode</title>
+</head>
+<body>
+    <h1>Entendendo a codificação de URL em HTML</h1>
+    <p>
+        Em HTML, quando você deseja incluir caracteres especiais em uma URL, como espaços, caracteres não alfanuméricos ou caracteres acentuados, é necessário codificá-los usando a codificação de URL.
+    </p>
+    <p>
+        A codificação de URL substitui os caracteres especiais por sequências de caracteres que são seguros para serem transmitidos pela Internet.
+    </p>
+    <p>
+        A codificação de URL é feita substituindo cada caractere especial por um código de escape, que consiste em um sinal de porcentagem (%) seguido por dois dígitos hexadecimais que representam o valor ASCII do caractere.
+    </p>
+    <p>
+        Por exemplo, o espaço em uma URL é substituído por <code>%20</code>, o caractere de ponto é substituído por <code>%2E</code>, e assim por diante.
+    </p>
+    <p>
+        Ao usar esses símbolos em texto HTML, é importante substituí-los por <code>&amp;lt;</code> para <strong>&lt;</strong> e <code>&amp;gt;</code> para <strong>&gt;</strong>. Isso é necessário para evitar que o navegador interprete erroneamente como parte do código HTML.
+    </p>
+    <p>
+        Aqui está um exemplo de como você pode codificar uma URL em HTML usando a tag <code>&lt;a&gt;</code>:
+    </p>
+    <pre>
+        &lt;a href="https://www.exemplo.com/buscar?query=espaço%20em%20branco"&gt;Link com espaço em branco&lt;/a&gt;
+    </pre>
+    <p>
+        Isso resultará em um link para <a href="https://www.exemplo.com/buscar?query=espaço%20em%20branco">https://www.exemplo.com/buscar?query=espaço%20em%20branco</a>.
+    </p>
+</body>
+</html>
